@@ -1,0 +1,12 @@
+1vs1.kit.defaultkit
+1vs1.system.worlds
+1vs1.system.statsremove
+1vs1.system.spy
+1vs1.system.builder
+1vs1.system.createarena
+1vs1.system.domemode
+1vs1.system.loadSchematic
+1vs1.system.loadworld
+1vs1.system.schemticFinish
+1vs1.system.setLoc
+1vs1.command.worldtp

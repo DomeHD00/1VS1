@@ -1,0 +1,69 @@
+name: 1VS1
+version: 1.0
+author: Dome_HD
+description: 1VS1
+main: eu.dieytberlegion.OneVsOne.OneVsOne
+commands:
+  test:
+    usage: /<command>
+    aliases: []  
+  worldtp:
+    usage: /<command>
+    aliases: [wt]  
+  setLoc:
+    usage: /<command>
+    aliases: [st]
+  schematic:
+    usage: /<command>
+    aliases: [sa, se]  
+  finish:
+    usage: /<command>
+    aliases: [fi]   
+  createArena:
+    usage: /<command>
+    aliases: [ca]
+  loadschematic:
+    usage: /<command>
+    aliases: [ls]  
+  loadworld:
+    usage: /<command>
+    aliases: [lw]  
+  schematicfinish:
+    usage: /<command>
+    aliases: [sf]
+  spectate:
+    usage: /<command>
+    aliases: [spc]
+  spectateend:
+    usage: /<command>
+    aliases: [spe]
+  kitsave:
+    usage: /<command>
+    aliases: []
+  kitdelete:
+    usage: /<command>
+    aliases: []
+  Builder:
+    usage: /<command>
+    aliases: []
+  stats:
+    usage: /<command>
+    aliases: []   
+  chatread:    
+    usage: /<command>
+    aliases: [cr,spy]    
+  statsRemove:    
+    usage: /<command>
+    aliases: [sr]
+  nick:
+    usage: /<command>
+    aliases: []
+  kitstop:
+    usage: /<command>
+    aliases: []    
+  deaultkitSave:
+    usage: /<command>
+    aliases: [defaultkitsave, dks]       
+  domemode:
+    usage: /<command>
+    aliases: []                                                               
