@@ -28,7 +28,6 @@ import eu.dieytberlegion.Commands.admin.schematicFinish;
 import eu.dieytberlegion.Commands.admin.setArena;
 import eu.dieytberlegion.Commands.admin.setLocation;
 import eu.dieytberlegion.Commands.admin.worldTp;
-import eu.dieytberlegion.Commands.moderation.nick;
 import eu.dieytberlegion.Commands.moderation.statsRemove;
 import eu.dieytberlegion.Commands.user.kitDelete;
 import eu.dieytberlegion.Commands.user.kitSave;
@@ -89,6 +88,10 @@ public class OneVsOne extends JavaPlugin {
 	public static ArrayList<LivingEntity> Top = new ArrayList<LivingEntity>();
 	public static ArrayList<Games> Games = new ArrayList<Games>();
 	public static ArrayList<eu.dieytberlegion.Objecks.Arena> LoadMaps = new ArrayList<eu.dieytberlegion.Objecks.Arena>();
+	public static ArrayList<Player> vipLobby = new ArrayList<Player>();
+	public static ArrayList<Player> youtubeLobby = new ArrayList<Player>();
+	public static ArrayList<Player> teamLobby = new ArrayList<Player>();
+	public static ArrayList<Player> afkLobby = new ArrayList<Player>();	
 	public static int Arena = 1;
 	public static HashMap<String, Integer> Arenaz = new HashMap<>();
 	public static HashMap<String, Integer> Line = new HashMap<>();

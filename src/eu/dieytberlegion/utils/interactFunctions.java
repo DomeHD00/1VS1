@@ -37,6 +37,7 @@ public class interactFunctions {
 			inv.setItem(8, CreateIteam(Material.EMERALD, "§bKit wählen"));
 			inv.setItem(10, CreateIteam(Material.NETHER_STAR, "§bSpiele anschauen"));
 			inv.setItem(12, CreateIteam(Material.ENDER_PEARL, "§bAchievements §c(coming soon)"));
+			inv.setItem(14, CreateIteam(Material.TNT, "§bLobbys")); 
 			//inv.setItem(14, CreateIteam(Material.DIAMOND_SWORD, "§bTeam Kämpfe §c(coming soon)"));
 			//inv.setItem(16, CreateIteam(Material.WORKBENCH, "§bTuniere §c(coming soon)"));
 			p.openInventory(inv);
@@ -193,7 +194,19 @@ public class interactFunctions {
 
 		}
 	}
-	
+	public static void interactTNT (Player p) {
+		
+		Inventory inv = p.getServer().createInventory(null, 9 * 1, "§bLobbywählen");
+		
+		inv.setItem(0, Createcolor(8,  "§7Normale Lobby"));
+		inv.setItem(2, Createcolor(11, "§6VIP Lobby"));
+		inv.setItem(4, Createcolor(5,  "§5Youtuber Lobby"));
+		inv.setItem(6, Createcolor(12, "§9Team Lobby"));
+		inv.setItem(8, Createcolor(1,  "§8AFK Lobby"));
+		
+		p.openInventory(inv);
+		
+	}
 	public static void interactColor (Player p) {
 		if (!OneVsOne.onGame.containsKey(p.getUniqueId())) {
 		if (OneVsOne.noChallenge.containsKey(p.getUniqueId())) {
@@ -238,6 +251,16 @@ public class interactFunctions {
 		ItemStack item = new ItemStack(Material.STAINED_GLASS_PANE, 1, (byte) 14);
 		ItemMeta meta = item.getItemMeta();
 		meta.setDisplayName("§cKeine Map");
+		item.setItemMeta(meta);
+
+		return item;
+	}
+	
+	private static ItemStack Createcolor(int id,String Name) {
+
+		ItemStack item = new ItemStack(351, 1, (byte) id);
+		ItemMeta meta = item.getItemMeta();
+		meta.setDisplayName(Name);
 		item.setItemMeta(meta);
 
 		return item;

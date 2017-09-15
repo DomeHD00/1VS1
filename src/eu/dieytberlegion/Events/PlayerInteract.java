@@ -94,7 +94,13 @@ public class PlayerInteract implements Listener {
 			}
 		}
 
-
+		// lobbys Wählen
+		if (p.getItemInHand().getType() == Material.TNT) {
+			if (e.getAction().equals(Action.RIGHT_CLICK_AIR) || e.getAction().equals(Action.RIGHT_CLICK_BLOCK)) {
+				interactFunctions.interactTNT(p);
+			}
+		}
+		
 		// Draf herrausgeforderen
 		if (p.getItemInHand().getType() == Material.STICK) {
 			if (e.getAction().equals(Action.RIGHT_CLICK_AIR) || e.getAction().equals(Action.RIGHT_CLICK_BLOCK)) {
@@ -105,6 +111,13 @@ public class PlayerInteract implements Listener {
 			e.setCancelled(true);
 		}
 
+		if (p.getItemInHand().getType() == Material.NAME_TAG) {
+			if (e.getAction().equals(Action.RIGHT_CLICK_AIR) || e.getAction().equals(Action.RIGHT_CLICK_BLOCK)) {
+
+				Bukkit.dispatchCommand(p, "nick");
+			}
+			e.setCancelled(true);
+		}
 		
 		//nicht erlaubte items
 		if (p.getItemInHand().getType() == Material.LAVA_BUCKET  || p.getItemInHand().getType() == Material.WATER_BUCKET || p.getItemInHand().getType() == Material.FLINT_AND_STEEL) {

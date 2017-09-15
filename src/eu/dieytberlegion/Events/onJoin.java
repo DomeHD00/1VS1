@@ -95,6 +95,26 @@ public class onJoin implements Listener{
     		}
         } );
         
+        for(Player all : Bukkit.getOnlinePlayers()){
+        	if(OneVsOne.afkLobby.contains(all)){
+        		all.hidePlayer(p);
+        		p.hidePlayer(all);
+        	}
+        	if(OneVsOne.teamLobby.contains(all)){
+        		all.hidePlayer(p);
+        		p.hidePlayer(all);
+        	}
+        	if(OneVsOne.youtubeLobby.contains(all)){
+        		all.hidePlayer(p);
+        		p.hidePlayer(all);
+        	}
+        	if(OneVsOne.youtubeLobby.contains(all)){
+        		all.hidePlayer(p);
+        		p.hidePlayer(all);
+        	}
+        	
+        	
+        }
         
         }
 	}
@@ -107,6 +127,12 @@ public class onJoin implements Listener{
 		p.getInventory().setBoots(null);
 		//Schwert zum spielen Setzen
 		p.getInventory().setItem(0,CreateIteam(Material.IRON_SWORD, "§5Spieler herausfordern")); 
+		//nick und Lobbyseletor
+		
+		if(p.hasPermission("WarsUP.system.nick")){
+		p.getInventory().setItem(2,CreateIteam(Material.NAME_TAG, "§5Nick")); 
+		}
+		
 		//Wer draf herausvordern
 		p.getInventory().setItem(1,CreateIteam(Material.STICK, "§aJeder darf mich herausfordern")); 
 		p.getInventory().setItem(8,CreateIteam(Material.COMMAND, "§bTools")); 

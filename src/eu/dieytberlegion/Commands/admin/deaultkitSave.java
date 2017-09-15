@@ -87,7 +87,7 @@ public class deaultkitSave implements CommandExecutor {
 					onJoin.Joininv(p); 
 					OneVsOne.kitmenu.remove(p.getUniqueId());
 					OneVsOne.fresplayer.remove(p.getUniqueId());
-					p.sendMessage(OneVsOne.prefix + "§aDu hast das Neu Deaultkit gespeichert!");
+					p.sendMessage(OneVsOne.prefix + "§aDu hast das §eNeu Deaultkit§a gespeichert!");
 				}); 
 				finish(p);
 			} else {
